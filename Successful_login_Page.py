@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-driver = webdriver.Chrome(executable_path="/Users/divya.sharma/documents/CYPRESS/chromedriver")
+driver = webdriver.Chrome(executable_path="/Users/chromedriver")
 driver.get("https://www.hudl.com/")
 driver.find_element(By.CSS_SELECTOR, "[data-qa-id = 'login']").click()
 print("User clicks on login link successfully")
